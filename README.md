@@ -1,1 +1,1 @@
-# OpenClassrooms-dw_projet3_ohmyfood
+# OpenClassrooms Formation Dev Web Projet 3 Ste Ohmyfood
