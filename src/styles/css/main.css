@@ -97,7 +97,7 @@ header h1 {
 .footer__block {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .footer__logo {
   color: white;
@@ -130,6 +130,7 @@ header h1 {
 .footer i {
   width: 1.2rem;
   margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 /*---/Loader/---*/
@@ -203,7 +204,7 @@ header h1 {
 
 /*---/slogan/---*/
 .slogan {
-  padding: 2.5rem 2rem 4.5rem 2rem;
+  padding: 2.4rem 2rem 4.5rem 2rem;
   text-align: center;
   background-color: rgb(250, 250, 250);
 }
@@ -212,7 +213,8 @@ header h1 {
 }
 .slogan p {
   font-weight: 300;
-  margin: 0.5rem 0 3.3rem 0;
+  font-size: 1.1rem;
+  margin: 0.7rem 0 3rem 0;
 }
 .slogan a {
   border: 0;
@@ -239,48 +241,53 @@ header h1 {
 
 /*---/fonctionnement/---*/
 .functioning {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 4.3rem 1rem;
 }
 .functioning h2 {
   margin-top: 0;
+  margin-bottom: 1.8rem;
 }
-.functioning ol {
+.functioning .list {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
 }
 @media (min-width: 64rem) {
-  .functioning ol {
+  .functioning .list {
     display: flex;
   }
 }
-.functioning li {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
+.functioning .list__tab {
+  padding: 1.65rem 2rem;
+  margin: 1rem 1rem 1.5rem 1rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  font-weight: 500;
+}
+.functioning .list__tab--colored {
+  background-color: #eee1fd;
 }
 @media (min-width: 64rem) {
-  .functioning li {
+  .functioning .list__tab {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
   }
-  .functioning li:first-child {
+  .functioning .list__tab:first-child {
     margin-left: 0.75rem;
   }
 }
-.functioning li:first-child {
+.functioning .list__tab:first-child {
   margin-top: 0;
 }
-.functioning li:last-child {
+.functioning .list__tab:last-child {
   margin-bottom: 0;
 }
-.functioning li::before {
+.functioning .list__tab::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356DC;
@@ -294,18 +301,22 @@ header h1 {
   position: absolute;
   left: -0.75rem;
 }
-.functioning i {
-  margin-right: 1rem;
+.functioning .list__icon {
+  margin-right: 1.6rem;
   color: #7e7e7e;
+  font-size: 1.2rem;
 }
-.functioning p {
+.functioning .list__icon--colored {
+  color: #9356dc;
+}
+.functioning .list p {
   margin: 0;
 }
 
 /*---/liste des restaurants/---*/
 .restaurants {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 2.3rem 1rem 2.8rem 1rem;
 }
 
 .restaurants__cards {
@@ -313,7 +324,6 @@ header h1 {
   grid-template-columns: repeat(1, 1fr);
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  row-gap: 2rem;
 }
 @media (min-width: 64rem) {
   .restaurants__cards {
@@ -327,13 +337,13 @@ header h1 {
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block;
+  margin-bottom: 1rem;
 }
 .card figure {
   margin: 0;
 }
 .card img {
-  height: 12rem;
+  height: 11rem;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
@@ -344,14 +354,15 @@ header h1 {
 .card__badge {
   background-color: #99E2D0;
   color: #1b6150;
-  padding: 0.5rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 0.125rem;
   position: absolute;
-  top: 1rem;
+  top: 0.9rem;
   right: 0.75rem;
+  font-size: 0.9rem;
 }
 .card figcaption {
-  padding: 1rem;
+  padding: 0.9rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -402,4 +413,5 @@ header h1 {
   align-items: center;
   justify-content: center;
   mix-blend-mode: lighten;
+  font-size: 1.5rem;
 }
