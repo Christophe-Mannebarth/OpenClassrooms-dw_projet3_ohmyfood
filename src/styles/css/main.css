@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+/*--___/loader animations/___--*/
 @-webkit-keyframes circles {
   100% {
     opacity: 0;
@@ -133,7 +134,7 @@ header h1 {
   font-size: 1rem;
 }
 
-/*---/Loader/---*/
+/*---/Loader design/---*/
 .circles {
   height: 50px;
   width: 50px;
@@ -269,7 +270,7 @@ header h1 {
   font-weight: 500;
 }
 .functioning .list__tab--colored {
-  background-color: #eee1fd;
+  background-color: #f5edff;
 }
 @media (min-width: 64rem) {
   .functioning .list__tab {
