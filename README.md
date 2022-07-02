@@ -12,11 +12,12 @@ L’équipe se compose de :
 
 Paul, le CTO du futur site ;
 Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
-Anissa, commerciale chargée de démarcher les restaurants ;
-    et vous, chargé du développement du site.
+Anissa, commerciale chargée de démarcher les restaurants ; et vous, chargé du développement du site.
 Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
 
-Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
+       Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? 
+       J’ai réussi à le convaincre, avec 3 autres, de déposer leurs  cartes en ligne ! 
+       Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
 
 Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le brief que vous établissez avec le CTO, Paul.
 
@@ -27,8 +28,9 @@ Pour ce projet, vous versionnez tout votre code sur Github avec des commits rég
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
 Livrables
 
-Un fichier au format TXT contenant le lien vers votre repository GitHub ;
-Un fichier au format TXT contenant le lien vers la page web du site.
+        Un fichier au format TXT contenant le lien vers votre repository GitHub ;
+        Un fichier au format TXT contenant le lien vers la page web du site.
+        
 ## Livrables attendus
 
 ### Contenu des pages
