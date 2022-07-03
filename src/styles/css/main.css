@@ -60,16 +60,14 @@
     transform: translate(0, 0);
   }
 }
-/*---/corps/---*/
-body,
-html {
-  margin: 0;
+/*---/pour l'ensemble du site/---*/
+* {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-
-* {
-  box-sizing: border-box;
+* a {
+  text-decoration: none;
 }
 
 /*---/taille des blocs/---*/
@@ -128,7 +126,6 @@ header h1 {
 }
 .footer a {
   color: white;
-  text-decoration: none;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -247,11 +244,7 @@ header h1 {
 }
 .slogan a:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-.slogan a a {
-  text-decoration: none;
-  color: inherit;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
 }
 
 /*---/fonctionnement/---*/

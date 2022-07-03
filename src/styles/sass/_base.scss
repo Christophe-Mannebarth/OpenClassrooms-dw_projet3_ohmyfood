@@ -1,16 +1,14 @@
 //module de couleurs sass
 @use "sass:color";
 
-/*---/corps/---*/
-body,
-html {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
-}
-
+/*---/pour l'ensemble du site/---*/
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  a {
+    text-decoration: none;
+  }
 }
 
 //bouton
@@ -28,13 +26,8 @@ html {
 
   &:hover {
     background-color: white;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.60);
+  } 
 }
 
 //couleurs du site
@@ -103,8 +96,6 @@ header {
 
   & a {
     color: white;
-    text-decoration: none;
-
     &:hover {
       text-decoration: underline;
     }
