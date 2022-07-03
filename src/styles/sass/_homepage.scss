@@ -76,14 +76,21 @@
   text-align: center;
   background-color: rgb(250, 250, 250);
 
+  //pour toute resolution superieure a 1082px
+  @media (min-width:67.68rem) {
+    border-radius: 0 0 1.25rem 1.25rem;
+  }
+
   & h2 {
-    margin: 0;
+    margin: 0 auto;
+    width: fit-content;
   }
 
   & p {
     font-weight: 300;
     font-size: 1.1rem;
-    margin: 0.7rem 0 3rem 0;
+    margin: 0.7rem auto 3rem auto;
+    width: fit-content;
   }
 
   & a {
@@ -94,6 +101,8 @@
 /*---/fonctionnement/---*/
 .functioning {
   padding: 3rem 1rem 4.3rem 1rem;
+  margin: 0 auto;
+  width: fit-content;
 
   & h2 {
     margin-top: 0;
@@ -106,7 +115,8 @@
     list-style: none;
     counter-reset: compteListe;
 
-    @media (min-width:64rem) {
+    //pour toute resolution superieure a 991px (desktop)
+    @media (min-width:62rem) {
       display: flex;
     }
 
@@ -119,11 +129,13 @@
       display: flex;
       position: relative;
       font-weight: 500;
+      width: 20.313rem;
       &--colored {
         background-color: #f5edff;
       }
   
-      @media (min-width:64rem) {
+      //pour toute resolution superieure a 991px (desktop)
+      @media (min-width:62rem) {
         flex: 1;
         margin: 0;
         margin-left: 2rem;
@@ -176,6 +188,11 @@
 .restaurants {
   background-color: #f6f6f6;
   padding: 2.3rem 1rem 2.8rem 1rem;
+  
+  //pour toute resolution superieure a 1082px
+  @media (min-width:67.68rem) {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
 }
 
 .restaurants__cards {
@@ -183,7 +200,8 @@
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
 
-  @media (min-width:64rem) {
+  //pour toute resolution superieure a 767px (tablettes et supp)
+  @media (min-width:48rem) {
     grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -1,8 +1,9 @@
-//module de couleurs sass//
+//module de couleurs sass
 @use "sass:color";
 
 /*---/corps/---*/
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
@@ -12,13 +13,11 @@ body, html {
   box-sizing: border-box;
 }
 
-//bouton//
+//bouton
 @mixin button($type) {
   border: 0;
   padding: 1rem 1.5rem;
   margin-top: 5rem;
-  /*font-weight: 500;
-  font-size: 1.1rem;*/
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
@@ -38,12 +37,14 @@ body, html {
   }
 }
 
+//couleurs du site
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+/*---/taille des blocs/---*/
 .block {
-  max-width: 1280px;
+  max-width: 67.68rem;
   margin: auto;
   position: relative;
 }
@@ -57,22 +58,23 @@ header {
 
   & h1 {
     font-family: "Shrikhand", "cursive";
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-    font-size:1.8rem;
+    font-size: 1.8rem;
+    width: fit-content;
   }
 }
 
- /*---/footer/---*/
+/*---/footer/---*/
 .footer {
   background-color: #353535;
-  
+
   &__block {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
   }
-  
+
   &__logo {
     color: white;
     font-family: "Shrikhand", "cursive";
