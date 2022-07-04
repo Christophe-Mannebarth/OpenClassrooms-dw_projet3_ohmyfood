@@ -404,10 +404,10 @@ header h1 {
   position: relative;
   background-color: black;
 }
-.card__heart:hover::before {
+.card__heart:active::before {
   opacity: 1;
 }
-.card__heart:hover .card__heart--filled {
+.card__heart:active .card__heart--filled, .card__heart:focus .card__heart--filled {
   opacity: 0;
 }
 .card__heart::before {

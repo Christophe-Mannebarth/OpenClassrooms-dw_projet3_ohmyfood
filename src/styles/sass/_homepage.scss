@@ -267,11 +267,12 @@
     position: relative;
     background-color: black;
 
-    &:hover::before {
+    &:active::before {
       opacity: 1;
     }
 
-    &:hover {
+    &:active,
+    &:focus {
       .card__heart {
         &--filled {
           opacity: 0;
