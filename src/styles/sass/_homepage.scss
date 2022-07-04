@@ -100,8 +100,7 @@
 
 /*---/fonctionnement/---*/
 .functioning {
-  padding: 3rem 1rem 4.3rem 1rem;
-  margin: 0 auto;
+  margin: 3rem auto 4.3rem auto;
   width: fit-content;
 
   & h2 {
@@ -212,7 +211,7 @@
   position: relative;
   text-decoration: none;
   color: inherit;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 
   & figure {
     margin: 0;
@@ -247,6 +246,9 @@
 
   &__text {
     flex: 1;
+    & a {
+      color: inherit;
+    }
   }
 
   & h3 {
@@ -279,7 +281,7 @@
 
     &::before {
       opacity: 0;
-      transition: 0.5s;
+      transition: 1s;
       content: "";
       position: absolute;
       top: 0;
@@ -292,7 +294,7 @@
 
   & i {
     background-color: white;
-    transition-duration: .25s;
+    transition-duration: 1s;
     position: absolute;
     top: 0;
     left: 0;

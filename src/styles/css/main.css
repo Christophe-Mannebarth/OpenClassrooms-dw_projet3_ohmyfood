@@ -249,8 +249,7 @@ header h1 {
 
 /*---/fonctionnement/---*/
 .functioning {
-  padding: 3rem 1rem 4.3rem 1rem;
-  margin: 0 auto;
+  margin: 3rem auto 4.3rem auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -355,7 +354,7 @@ header h1 {
   position: relative;
   text-decoration: none;
   color: inherit;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 .card figure {
   margin: 0;
@@ -388,6 +387,9 @@ header h1 {
 .card__text {
   flex: 1;
 }
+.card__text a {
+  color: inherit;
+}
 .card h3 {
   margin: 0;
   margin-bottom: 0.25rem;
@@ -410,7 +412,7 @@ header h1 {
 }
 .card__heart::before {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
   content: "";
   position: absolute;
   top: 0;
@@ -421,7 +423,7 @@ header h1 {
 }
 .card i {
   background-color: white;
-  transition-duration: 0.25s;
+  transition-duration: 1s;
   position: absolute;
   top: 0;
   left: 0;
