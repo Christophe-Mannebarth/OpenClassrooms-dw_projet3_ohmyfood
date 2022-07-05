@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+
   a {
     text-decoration: none;
   }
@@ -27,7 +28,58 @@
   &:hover {
     background-color: white;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.60);
-  } 
+  }
+}
+
+//coeur
+@mixin heart {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+
+  &:active::before {
+    opacity: 1;
+  }
+
+  &:active,
+  &:focus {
+
+    .card__heart,
+    .menu__heart {
+      &--filled {
+        opacity: 0;
+      }
+    }
+  }
+
+  &::before {
+    opacity: 0;
+    transition: 1s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+  }
+
+  & i {
+    background-color: white;
+    transition-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+    font-size: 1.5rem;
+  }
 }
 
 //couleurs du site
@@ -55,6 +107,14 @@ header {
     text-align: center;
     font-size: 1.8rem;
     width: fit-content;
+  }
+
+  & i {
+    position: absolute;
+    left: 1.5rem;
+    top: 33%;
+    font-size: 1.3rem;
+    color: black;
   }
 }
 
@@ -96,6 +156,7 @@ header {
 
   & a {
     color: white;
+
     &:hover {
       text-decoration: underline;
     }

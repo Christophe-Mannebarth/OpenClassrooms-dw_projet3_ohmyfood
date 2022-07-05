@@ -1,4 +1,4 @@
-/*--___/loader animations/___--*/
+/*---/animations du loader/---*/
 @keyframes circles {
   100% {
     opacity: 0;
@@ -71,3 +71,13 @@
      transform: translate(0, 0);
   }
 }
+
+/*---/animation des etiquettes des contenus des menus/---*/
+@keyframes contentDelay {
+   0% {
+     transform: scale(0)
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
