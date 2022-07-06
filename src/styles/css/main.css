@@ -544,21 +544,39 @@ header i {
   font-size: 1.5rem;
 }
 
+/*/---/entete fixé/---*/
+.header--fixed {
+  background-color: #fff;
+  box-shadow: 0 0 10px #f7f7f7;
+  display: flex;
+  height: 4em;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  z-index: 800;
+  position: fixed;
+  top: 0;
+}
+
 /*---/image d'entete/---*/
 .hero img {
+  display: block;
   width: 100%;
   max-height: 32rem;
   height: 17rem;
   -o-object-fit: cover;
      object-fit: cover;
+  position: fixed;
+  top: 0;
 }
 
 /*---/conteneur du menu/---*/
 .menu {
-  margin-top: -3.7rem;
+  margin-top: 14rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
+  position: relative;
 }
 .menu__header {
   padding: 1rem 2rem 0 1rem;
@@ -760,5 +778,5 @@ header i {
   transition: all 0.4s 0.2s ease-in-out;
 }
 .content input:checked ~ .content__checking {
-  margin: -1rem -1rem -1rem 1rem;
+  margin-right: -1rem;
 }
