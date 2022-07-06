@@ -78,6 +78,52 @@
     transform: scale(1);
   }
 }
+/*---/timing apparition des etiquettes de menu/---*/
+.delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
 /*---/pour l'ensemble du site/---*/
 * {
   box-sizing: border-box;
@@ -305,8 +351,11 @@ header i {
   font-weight: 500;
   width: 20.313rem;
 }
-.functioning .list__tab--colored {
+.functioning .list__tab:hover {
   background-color: #f5edff;
+}
+.functioning .list__tab:hover .list__icon--colored {
+  color: #9356dc;
 }
 @media (min-width: 62rem) {
   .functioning .list__tab {
@@ -342,9 +391,6 @@ header i {
   margin-right: 1.6rem;
   color: #7e7e7e;
   font-size: 1.2rem;
-}
-.functioning .list__icon--colored {
-  color: #9356dc;
 }
 .functioning .list p {
   margin: 0;
@@ -433,8 +479,7 @@ header i {
   opacity: 1;
 }
 .card__heart:active .card__heart--filled,
-.card__heart:active .menu__heart--filled, .card__heart:focus .card__heart--filled,
-.card__heart:focus .menu__heart--filled {
+.card__heart:active .menu__heart--filled {
   opacity: 0;
 }
 .card__heart::before {
@@ -500,8 +545,7 @@ header i {
   opacity: 1;
 }
 .menu__heart:active .card__heart--filled,
-.menu__heart:active .menu__heart--filled, .menu__heart:focus .card__heart--filled,
-.menu__heart:focus .menu__heart--filled {
+.menu__heart:active .menu__heart--filled {
   opacity: 0;
 }
 .menu__heart::before {
@@ -667,49 +711,4 @@ header i {
 }
 .content:hover i {
   transform: rotate(0);
-}
-
-.delay-0 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.delay-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.delay-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.delay-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.delay-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.delay-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.delay-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
 }

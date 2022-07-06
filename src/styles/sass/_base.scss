@@ -1,6 +1,13 @@
 //module de couleurs sass
 @use "sass:color";
 
+/*---/timing apparition des etiquettes de menu/---*/
+@for $i from 0 to 9 {
+  .delay-#{$i} {
+    animation-delay: #{$i/10}s;
+  }
+}
+
 /*---/pour l'ensemble du site/---*/
 * {
   box-sizing: border-box;
@@ -43,8 +50,7 @@
     opacity: 1;
   }
 
-  &:active,
-  &:focus {
+  &:active {
 
     .card__heart,
     .menu__heart {
