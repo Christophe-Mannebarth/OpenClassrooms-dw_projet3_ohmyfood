@@ -103,3 +103,13 @@
        transform: scale(1)
    }
 }
+
+/*---/animation des coeurs/---*/
+@keyframes heart {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }

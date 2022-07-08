@@ -111,6 +111,23 @@
     transform: scale(1);
   }
 }
+/*---/animation des coeurs/---*/
+@-webkit-keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*---/timing apparition des etiquettes de menu/---*/
 .delay-0 {
   -webkit-animation-delay: 0s;
@@ -512,43 +529,28 @@ header i {
   margin: 0;
 }
 .card__heart {
-  height: 2rem;
-  width: 2rem;
   cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.card__heart:active::before {
-  opacity: 1;
-}
-.card__heart:active .card__heart--filled,
-.card__heart:active .menu__heart--filled {
-  opacity: 0;
-}
-.card__heart::before {
-  opacity: 0;
-  transition: 1s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.card__heart i {
-  background-color: white;
-  transition-duration: 1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
+  margin-left: auto;
   font-size: 1.5rem;
+  display: flex;
+  margin-right: 1rem;
+}
+.card__heart input[type=checkbox], .card__heart .check {
+  display: none;
+}
+.card__heart input[type=checkbox]:checked ~ .check {
+  display: inline-block;
+  -webkit-animation: heart 1.5s;
+          animation: heart 1.5s;
+  color: rgba(255, 255, 255, 0);
+}
+.card__heart input[type=checkbox]:checked ~ .uncheck {
+  display: none;
+}
+.card__heart .fas {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*---------/Pages de menu/---------*/
@@ -598,43 +600,28 @@ header i {
   font-size: 1.6rem;
 }
 .menu__heart {
-  height: 2rem;
-  width: 2rem;
   cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.menu__heart:active::before {
-  opacity: 1;
-}
-.menu__heart:active .card__heart--filled,
-.menu__heart:active .menu__heart--filled {
-  opacity: 0;
-}
-.menu__heart::before {
-  opacity: 0;
-  transition: 1s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.menu__heart i {
-  background-color: white;
-  transition-duration: 1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
+  margin-left: auto;
   font-size: 1.5rem;
+  display: flex;
+  margin-right: 1rem;
+}
+.menu__heart input[type=checkbox], .menu__heart .check {
+  display: none;
+}
+.menu__heart input[type=checkbox]:checked ~ .check {
+  display: inline-block;
+  -webkit-animation: heart 1.5s;
+          animation: heart 1.5s;
+  color: rgba(255, 255, 255, 0);
+}
+.menu__heart input[type=checkbox]:checked ~ .uncheck {
+  display: none;
+}
+.menu__heart .fas {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .menu__heart i {
   background-color: #f6f6f6 !important;

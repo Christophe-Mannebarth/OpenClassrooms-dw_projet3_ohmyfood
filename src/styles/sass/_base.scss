@@ -44,51 +44,35 @@
 
 //coeur
 @mixin heart {
-  height: 2rem;
-  width: 2rem;
   cursor: pointer;
-  position: relative;
-  background-color: black;
+  margin-left: auto;
+  font-size: 1.5rem;
+  display: flex;
+  margin-right: 1rem;
 
-  &:active::before {
-    opacity: 1;
+  & input[type="checkbox"],
+  & .check {
+    display: none;
   }
 
-  &:active {
-
-    .card__heart,
-    .menu__heart {
-      &--filled {
-        opacity: 0;
-      }
+  & input[type="checkbox"]:checked~ {
+    & .check {
+      display: inline-block;
+      animation: heart 1.5s;
+      color: rgb(255, 255, 255, 0);
     }
   }
 
-  &::before {
-    opacity: 0;
-    transition: 1s;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+  & input[type="checkbox"]:checked~ {
+    & .uncheck {
+      display: none;
+    }
   }
 
-  & i {
-    background-color: white;
-    transition-duration: 1s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
-    font-size: 1.5rem;
+  & .fas {
+    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }
 
