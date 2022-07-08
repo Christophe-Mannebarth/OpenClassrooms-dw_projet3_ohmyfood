@@ -1,3 +1,5 @@
+/*---------/Page d'acceuil/---------*/
+
 /*---/Loader design/---*/
 .circles {
   height: 50px;
@@ -132,10 +134,18 @@
       width: 20.313rem;
       &:hover {
         background-color: #f5edff;
+
         .list__icon {
           &--colored {
             color: #9356dc;
           }
+        }
+      }
+      
+      &--colored {
+        background-color: #f5edff;
+        & i {
+          color: #9356dc;
         }
       }
   
