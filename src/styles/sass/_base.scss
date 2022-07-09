@@ -1,13 +1,6 @@
 //module de couleurs sass
 @use "sass:color";
 
-/*---/timing apparition des etiquettes de menu/---*/
-@for $i from 0 to 9 {
-  .delay-#{$i} {
-    animation-delay: #{$i/10}s;
-  }
-}
-
 /*---/pour l'ensemble du site/---*/
 * {
   box-sizing: border-box;
@@ -25,9 +18,7 @@
 
 //bouton
 @mixin button($type) {
-  border: 0;
   padding: 1rem 1.5rem;
-  margin-top: 5rem;
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
@@ -120,6 +111,11 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    @media (min-width:48rem) and (max-width:67.67rem) {
+      max-width: 50rem;
+      padding: 1rem 0 0 0;
+    }
+
   }
 
   &__logo {
@@ -134,6 +130,12 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    @media (min-width:48rem) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 1rem;
+      margin-bottom: 2rem;;
+    }
   }
 
   & li {
@@ -145,6 +147,11 @@ header {
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width:48rem) {
+      margin: 0;
+      width: fit-content;
     }
   }
 

@@ -97,6 +97,7 @@
 
   //bouton explorer
   & a {
+    margin-top: 5rem;
     @include button(primary);
   }
 }
