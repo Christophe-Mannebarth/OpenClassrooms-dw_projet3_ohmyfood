@@ -1,8 +1,8 @@
 /*---------/Pages de menu/---------*/
 
-/*---/fond noir pour tablettes/---*/
+/*---/conteneur principal:fond noir pour tablettes/---*/
 @media (min-width:48rem) and (max-width:67.67rem) {
-  main {
+  .main-container {
     background-color: #353535;
   }
 }
