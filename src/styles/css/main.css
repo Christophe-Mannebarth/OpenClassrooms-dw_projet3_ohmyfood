@@ -181,7 +181,7 @@ header i {
   flex-direction: column;
   padding: 1.5rem;
 }
-@media (min-width: 48rem) and (max-width: 75rem) {
+@media (min-width: 48rem) and (max-width: 67.67rem) {
   .footer__block {
     max-width: 50rem;
     padding: 1rem 0 0 0;

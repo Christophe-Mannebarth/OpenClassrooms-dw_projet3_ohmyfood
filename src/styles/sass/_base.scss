@@ -112,8 +112,8 @@ header {
     flex-direction: column;
     padding: 1.5rem;
 
-    //pour toute resolution comprise entre 768px et 1200px (desktop)
-    @media (min-width:48rem) and (max-width:75rem) {
+    //pour toute resolution comprise entre 768px et 1082px (desktop)
+    @media (min-width:48rem) and (max-width:67.67rem) {
       max-width: 50rem;
       padding: 1rem 0 0 0;
     }
