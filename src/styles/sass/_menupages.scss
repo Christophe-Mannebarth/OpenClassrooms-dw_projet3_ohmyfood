@@ -45,6 +45,7 @@
   background-color: #f6f6f6;
   position: relative;
 
+  //pour toute resolution comprise entre 768px et 1082px (desktop)
   @media (min-width:48rem) and (max-width:67.67rem) {
     max-width: 50rem;
   }
@@ -60,6 +61,7 @@
       font-size: 1.6rem;
     }
 
+    //pour toute resolution comprise entre 768px et 1082px (desktop)
     @media (min-width:48rem) and (max-width:67.67rem) {
       max-width: 40rem;
       margin: 0 auto;
@@ -79,11 +81,13 @@
   &__categories {
     margin: 0rem 1rem;
 
+    //pour toute resolution comprise entre 768px et 1082px (desktop)
     @media (min-width:48rem) and (max-width:67.67rem) {
       max-width: 40rem;
       margin: 0 auto;
     }
 
+    //pour toute resolution superieure a 1082px
     @media (min-width:67.68rem) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -97,6 +101,7 @@
     margin-top: 2.8rem;
     justify-content: center;
 
+    //pour toute resolution superieure a 1082px
     @media (min-width:67.68rem) {
       width: 100%;
       margin: 1rem auto !important;
@@ -130,6 +135,7 @@
     margin-bottom: 0;
   }
 
+  //pour toute resolution superieure a 1082px
   @media (min-width:67.68rem) {
     max-width: 21.25rem;
     height: fit-content;

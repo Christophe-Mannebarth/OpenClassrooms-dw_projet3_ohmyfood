@@ -118,8 +118,8 @@
     list-style: none;
     counter-reset: compteListe;
 
-    //pour toute resolution superieure a 991px (desktop)
-    @media (min-width:62rem) {
+    //pour toute resolution superieure a 1200px (desktop)
+    @media (min-width:75rem) {
       display: flex;
     }
 
@@ -150,8 +150,8 @@
         }
       }
   
-      //pour toute resolution superieure a 991px (desktop)
-      @media (min-width:62rem) {
+      //pour toute resolution superieure a 1200px (desktop)
+      @media (min-width:75rem) {
         flex: 1;
         margin: 0;
         margin-left: 2rem;

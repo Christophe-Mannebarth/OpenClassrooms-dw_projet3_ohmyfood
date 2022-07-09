@@ -181,7 +181,7 @@ header i {
   flex-direction: column;
   padding: 1.5rem;
 }
-@media (min-width: 48rem) and (max-width: 67.67rem) {
+@media (min-width: 48rem) and (max-width: 75rem) {
   .footer__block {
     max-width: 50rem;
     padding: 1rem 0 0 0;
@@ -365,7 +365,7 @@ header i {
   list-style: none;
   counter-reset: compteListe;
 }
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   .functioning .list {
     display: flex;
   }
@@ -393,7 +393,7 @@ header i {
 .functioning .list__tab--colored i {
   color: #9356dc;
 }
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   .functioning .list__tab {
     flex: 1;
     margin: 0;
