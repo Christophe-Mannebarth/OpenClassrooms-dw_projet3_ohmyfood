@@ -196,26 +196,20 @@
   }
 
   &__header {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     flex: 1;
+    @include cropping
   }
 
   & h4 {
     margin: 0 0 0.5rem 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     font-size: 1.1rem;
+    @include cropping
   }
 
   & p {
     margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     font-size: 0.9rem;
+    @include cropping
   }
 
   &__price {

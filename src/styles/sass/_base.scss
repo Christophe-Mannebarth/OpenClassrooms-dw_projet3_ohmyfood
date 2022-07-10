@@ -67,6 +67,13 @@
   }
 }
 
+//rognage du texte des menus
+@mixin cropping {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 //couleurs du site
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
