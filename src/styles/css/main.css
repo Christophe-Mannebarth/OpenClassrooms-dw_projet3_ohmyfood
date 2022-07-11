@@ -162,6 +162,7 @@ header h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-weight: normal;
 }
 header i {
   position: absolute;
@@ -386,12 +387,6 @@ header i {
 .functioning .list__tab:hover .list__icon--colored {
   color: #9356dc;
 }
-.functioning .list__tab--colored {
-  background-color: #f5edff;
-}
-.functioning .list__tab--colored i {
-  color: #9356dc;
-}
 @media (min-width: 75rem) {
   .functioning .list__tab {
     flex: 1;
@@ -583,7 +578,8 @@ header i {
 }
 .menu__header h2 {
   font-family: "Shrikhand", "cursive";
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  font-weight: normal;
 }
 @media (min-width: 48rem) and (max-width: 67.67rem) {
   .menu__header {

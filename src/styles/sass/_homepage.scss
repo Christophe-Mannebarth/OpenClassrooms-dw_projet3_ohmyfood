@@ -142,13 +142,6 @@
           }
         }
       }
-      
-      &--colored {
-        background-color: #f5edff;
-        & i {
-          color: #9356dc;
-        }
-      }
   
       //pour toute resolution superieure a 1200px (desktop)
       @media (min-width:75rem) {
